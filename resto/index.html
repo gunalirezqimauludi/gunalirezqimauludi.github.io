@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resto</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/flickity.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Category
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Barbecue restaurants</a></li>
+                        <li><a class="dropdown-item" href="#">Fast-food restaurants</a></li>
+                        <li><a class="dropdown-item" href="#">Fish and chip restaurants</a></li>
+                        <li><a class="dropdown-item" href="#">Vegetarian restaurants</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+            <div class="d-flex">
+                <form role="search">
+                    <div class="input-group input-search">
+                        <span class="input-group-text">
+                            <img src="assets/icons/ic_search.svg" alt="" srcset="">
+                        </span>
+                        <input class="form-control shadow-none" type="search" placeholder="Search your favorite food" aria-label="Search">
+                    </div>
+                </form>
+                <a href="#" class="btn btn-primary ms-3">Log In</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="carousel" data-flickity='{ "autoPlay": true, "fullscreen": true, "cellAlign": "left", "pageDots": false, "prevNextButtons": false, "draggable": ">1" }'>
+        <div class="carousel-cell">
+            <img src="assets/img/sliders/slider-1.jpg" class="d-block" alt="Padang Restaurant">
+            <div class="carousel-caption">
+                <div class="mb-4">
+                    <div class="star-rating mb-2">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <span class="rating-score">5.0</span>
+                        <span class="review-count">(5.2K+)</span>
+                    </div>
+                    <h5 class="restaurant-name">Padang Restaurant</h5>
+                    <h6 class="rate-price">IDR 49.999 - IDR 560.000</h6>
+                    <span class="location">Padang, Indonesia</span>
+                </div>
+                <a href="#" class="btn btn-secondary btn-path mb-1">Make Reservation</a>
+                <p class="additional-info">No extra cost</p>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="assets/img/sliders/slider-2.jpg" class="d-block" alt="de Bale Restaurant">
+            <div class="carousel-caption">
+                <div class="mb-4">
+                    <div class="star-rating mb-2">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star_muted.svg">
+                        <span class="rating-score">4.0</span>
+                        <span class="review-count">(1.3K+)</span>
+                    </div>
+                    <h5 class="restaurant-name">de Bale Restaurant</h5>
+                    <h6 class="rate-price">IDR 125.000 - IDR 1.800.000</h6>
+                    <span class="location">Bandung, Indonesia</span>
+                </div>
+                <a href="#" class="btn btn-secondary btn-path mb-1">Make Reservation</a>
+                <p class="additional-info">No extra cost</p>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="assets/img/sliders/slider-3.jpeg" class="d-block" alt="Lalah Balinese">
+            <div class="carousel-caption">
+                <div class="mb-4">
+                    <div class="star-rating mb-2">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star.svg">
+                        <img src="assets/icons/ic_star_muted.svg">
+                        <img src="assets/icons/ic_star_muted.svg">
+                        <span class="rating-score">3.0</span>
+                        <span class="review-count">(4.3K+)</span>
+                    </div>
+                    <h5 class="restaurant-name">Lalah Balinese</h5>
+                    <h6 class="rate-price">IDR 250.000 - IDR 1.250.000</h6>
+                    <span class="location">Bali, Indonesia</span>
+                </div>
+                <a href="#" class="btn btn-secondary btn-path mb-1">Make Reservation</a>
+                <p class="additional-info">No extra cost</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="benefit">
+        <div class="container-fluid">
+            <div class="text-group text-center mb-5">
+                <p class="text-support text-primary">Special Benefit For You</p>
+                <h2 class="header-primary">Why Should Choose Us?</h2>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card card-benefit" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                        <img src="assets/icons/ic_discounts.svg" class="card-img-top" alt="Extra Discounts">
+                        <div class="card-body mt-3 mx-2">
+                            <h5 class="card-title mb-3">Extra Discounts</h5>
+                            <p class="card-text mb-4">Get your special discount by using our reservation</p>
+                        </div>
+                        <a href="#" class="btn btn-view-detail">View Details</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-benefit" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                        <img src="assets/icons/ic_eat.svg" class="card-img-top" alt="Come and Eat">
+                        <div class="card-body mt-3 mx-2">
+                            <h5 class="card-title mb-3">Come and Eat</h5>
+                            <p class="card-text mb-4">Get your own table quickly & without waiting in line</p>
+                        </div>
+                        <a href="#" class="btn btn-view-detail">View Details</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-benefit" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                        <img src="assets/icons/ic_tax.svg" class="card-img-top" alt="No Extra Fee">
+                        <div class="card-body mt-3 mx-2">
+                            <h5 class="card-title mb-3">No Extra Fee</h5>
+                            <p class="card-text mb-4">Get tax free if you want to order food and make a reservation</p>
+                        </div>
+                        <a href="#" class="btn btn-view-detail">View Details</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-benefit" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+                        <img src="assets/icons/ic_clean.svg" class="card-img-top" alt="Guaranteed Cleanliness">
+                        <div class="card-body mt-3 mx-2">
+                            <h5 class="card-title mb-3">Guaranteed Cleanliness</h5>
+                            <p class="card-text mb-4">We ensure the cleanliness of the place as well as the food</p>
+                        </div>
+                        <a href="#" class="btn btn-view-detail">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 align-self-center">
+                    <div class="text-group mb-5 w-75">
+                        <p class="text-support text-primary">Top 3 Featured Restaurant</p>
+                        <h2 class="header-primary">Most Popular Restaurants</h2>
+                        <p class="mt-3">The best restaurant in our opinion is how much customers like it in terms of place, price, comfort and of course the taste of the food itself.</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-path mb-1">View All Restaurant</a>
+                </div>
+                <div class="col-8">
+                    <div class="row d-flex">
+                        <div class="col-4 active">
+                            <a href="#">
+                                <div class="card card-restaurant" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="100">
+                                    <img src="assets/img/restaurants/restaurant-1.jpg" class="card-img-top" alt="Bind Balorant">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="star-rating mb-2">
+                                                    <img src="assets/icons/ic_star.svg">
+                                                    <span class="rating-score">5.0</span>
+                                                    <span class="review-count">(5.2K+)</span>
+                                                </div>
+                                                <h5 class="card-title">Bind Balorant</h5>
+                                                <p class="card-text">Jakarta, Indonesia</p>
+                                            </div>
+                                            <div class="col-2 align-self-center">
+                                                <button class="btn btn-secondary btn-arrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="card card-restaurant" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="200">
+                                    <img src="assets/img/restaurants/restaurant-2.jpg" class="card-img-top" alt="Gormeteria">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="star-rating mb-2">
+                                                    <img src="assets/icons/ic_star.svg">
+                                                    <span class="rating-score">5.0</span>
+                                                    <span class="review-count">(8.3K+)</span>
+                                                </div>
+                                                <h5 class="card-title">Gormeteria</h5>
+                                                <p class="card-text">Bandung, Indonesia</p>
+                                            </div>
+                                            <div class="col-2 align-self-center">
+                                                <button class="btn btn-secondary btn-arrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="card card-restaurant" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="300">
+                                    <img src="assets/img/restaurants/restaurant-3.jpg" class="card-img-top" alt="Babah Bali">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="star-rating mb-2">
+                                                    <img src="assets/icons/ic_star.svg">
+                                                    <span class="rating-score">4.0</span>
+                                                    <span class="review-count">(2.1K+)</span>
+                                                </div>
+                                                <h5 class="card-title">Babah Bali</h5>
+                                                <p class="card-text">Bali, Indonesia</p>
+                                            </div>
+                                            <div class="col-2 align-self-center">
+                                                <button class="btn btn-secondary btn-arrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="basedby-city">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="text-group mb-5 w-75">
+                        <p class="text-support text-primary">Restaurant Based By City</p>
+                        <h2 class="header-primary">Restaurant Near You</h2>
+                    </div>
+                </div>
+                <div class="col-6 text-end">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-light btn-city dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Jakarta, Indonesia
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bandung, Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#">Jakarta, Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#">Surabaya, Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#">Bali, Indonesia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row d-flex">
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="card card-restaurant" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="100">
+                                    <img src="assets/img/restaurants/restaurant-4.jpg" class="card-img-top" alt="Bind Balorant">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="star-rating mb-2">
+                                                    <img src="assets/icons/ic_star.svg">
+                                                    <span class="rating-score">5.0</span>
+                                                    <span class="review-count">(6.6K+)</span>
+                                                </div>
+                                                <h5 class="card-title">Batavia Restaurant</h5>
+                                                <p class="card-text">IDR 29.000 - IDR 259.999</p>
+                                            </div>
+                                            <div class="col-2 align-self-center">
+                                                <button class="btn btn-secondary btn-arrow"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="card card-restaurant" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="200">
+                                    <img src="assets/img/restaurants/restaurant-5.jpg" class="card-img-top" alt="Gormeteria">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="star-rating mb-2">
+                                                    <img src="assets/icons/ic_star.svg">
+                                                    <span class="rating-score">5.0</span>
+                                                    <span class="review-count">(3.6K+)</span>
+                                                </div>
+                                                <h5 class="card-title">Split Ascent Restaurant</h5>
+                                                <p class="card-text">IDR 49.999 - IDR 560.000</p>
+                                            </div>
+                                            <div class="col-2 align-self-center">
+                                                <button class="btn btn-secondary btn-arrow"></button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="card card-restaurant" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="300">
+                                    <img src="assets/img/restaurants/restaurant-6.jpg" class="card-img-top" alt="Babah Bali">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <div class="star-rating mb-2">
+                                                    <img src="assets/icons/ic_star.svg">
+                                                    <span class="rating-score">4.0</span>
+                                                    <span class="review-count">(11K+)</span>
+                                                </div>
+                                                <h5 class="card-title">Daza Fracture Restaurant</h5>
+                                                <p class="card-text">IDR 29.999 - IDR 560.000</p>
+                                            </div>
+                                            <div class="col-2 align-self-center">
+                                                <button class="btn btn-secondary btn-arrow"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mt-5">
+                    <a href="#" class="btn btn-secondary btn-path mb-1">View All Restaurant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expert-chef mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container-profile text-center">
+                        <img src="assets/img/chef.jpg" alt="Expert Chefs In Fuddy">
+                        <div class="experience" data-aos="fade-left">
+                            <img src="assets/icons/ic_verified.svg" alt="Experience Verified" srcset="">
+                            <h5>12 Years</h5>
+                            <p>Experience</p>
+                        </div>
+                        <div class="location" data-aos="fade-right">
+                            <img src="assets/img/restaurants/restaurant-3.jpg" alt="Experience Verified" srcset="">
+                            <div class="d-flex flex-column align-items-start align-self-center ms-3 me-3">
+                                <p class="mb-1">Chef at restaurant:</p>
+                                <h5>Pearl Dolphin</h5>
+                                <a href="#" class="btn btn-link btn-profile-detail mt-2 p-0">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-group mb-5 w-75">
+                        <p class="text-support text-primary">Top 4 Expert Chefs</p>
+                        <h2 class="header-primary">Expert Chefs in Fuddy</h2>
+                    </div>
+
+                    <div class="card card-expert-chef">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">PIZAA</p>
+                                    <h5 class="card-title">Phoenix Satcheup</h5>
+                                    <span>Padang, Indonesia</span>  
+                                </div>
+                                <div class="col-6 align-self-center text-end">
+                                    <a href="#" class="btn btn-link btn-profile-detail">Profile Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-expert-chef">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">VEGAN</p>
+                                    <h5 class="card-title">Chamber Botfrag</h5>
+                                    <span>Bandung, Indonesia</span>  
+                                </div>
+                                <div class="col-6 align-self-center text-end">
+                                    <a href="#" class="btn btn-link btn-profile-detail">Profile Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-expert-chef">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">ROAST CHICKEN</p>
+                                    <h5 class="card-title">Asep Vandal</h5>
+                                    <span>Sunda, Indonesia</span>  
+                                </div>
+                                <div class="col-6 align-self-center text-end">
+                                    <a href="#" class="btn btn-link btn-profile-detail">Profile Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-expert-chef">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text">BEEF STEAK</p>
+                                    <h5 class="card-title">I Made Invoker</h5>
+                                    <span>Bali, Indonesia</span>  
+                                </div>
+                                <div class="col-6 align-self-center text-end">
+                                    <a href="#" class="btn btn-link btn-profile-detail">Profile Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-secondary btn-path mb-1 mt-5">View All Chef</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+
+        $(".featured .card-restaurant").hover( function() {
+            $(".featured .card-restaurant").parent().parent().removeClass("active");
+            $(this).parent().parent().addClass("active");
+        });
+    </script>
+</body>
+
+</html>
